@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img\logo1.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Albatros Cake Shop</title>
+<link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+<!-- ----nav bar--- -->
+<header>
+    <nav class="navbar">
+        <ul>
+          <li><img src="img\logo1.png" width="90px" height="50px"></li>
+            <li style="margin-left:2em;"><a href="index.html">HOME</a></li>
+            <li><a href="index.html">ABOUT</a></li>
+            <li class="dropdown" id="cakes"><a href="product.html">
+                <div class="dropbtn">PRODUCTS 
+                  <i class="fa fa-caret-down"></i></div>
+                <div class="dropdown-content">
+                  <a href="product.html">CAKES <i class="fa-solid fa-caret-right"></i></a>
+                  <a href="product.html">PLUM CAKES <i class="fa-solid fa-caret-right"></i></a>
+                  <a href="product.html">CUP CAKES & MUFFINS <i class="fa-solid fa-caret-right"></i></a>
+                  <a href="product.html">CHEESE CAKES<i class="fa-solid fa-caret-right"></i></a>
+                  <a href="product.html">TARTS<i class="fa-solid fa-caret-right"></i></a>
+                  <a href="product.html">BEVERAGES<i class="fa-solid fa-caret-right"></i></a>
+                  <a href="product.html">COOKIES & BISCUITS<i class="fa-solid fa-caret-right"></i></a>
+                  <a href="product.html">DONUTS & SWEETS<i class="fa-solid fa-caret-right"></i></a>
+                  <a href="product.html">SPRING ROLLS & PUFFS<i class="fa-solid fa-caret-right"></i></a>
+                  <a href="product.html">CROISSANTS & WAFFLES<i class="fa-solid fa-caret-right"></i></a>
+                  <a href="product.html">PIZZA, BURGER & PASTA<i class="fa-solid fa-caret-right"></i></a>
+                </div>
+              </a>
+            </li> 
+            <li class="dropdown">
+                <div class="dropbtn"><a href="#footer">SERVICES
+                    <i class="fa fa-caret-down"></i></div>
+                  <div class="dropdown-content">
+                    <a href="#footer">DINE IN</a>
+                    <a href="#footer">TAKE OUT</a>
+                    <a href="#footer">DELIVERY</a>
+                    <a href="#footer">CATERING</a></div>
+                  </a></li>
+                <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="#home"><i class="fa-solid fa-user"></i> MY ACCOUNT</a></li>
+            <li style="margin-right:7em;"><a href="cart.html" id="#cart"><i class="fa-solid fa-cart-shopping"></i> CART</a></li>          
+          <button type="button" class="btn btn-secondary btn-lg"><a href="signin.html" > Sign In</button></a>
+          <button type="button" class="btn btn-secondary btn-lg"><a href="signup.html" >Sign Up</button></a>
+</ul>
+    </nav>
+<!-- ----SLIDER--- -->
+    <div  class="car">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img\str.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Treat Yourself to Cake Heaven</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img\c341.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5> Satisfy Your Sweet Tooth with Refreshing Cake Treats</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img\a121.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5> Dive into a World of Mouthwatering Treats and Refreshing Drinks</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img\a211.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Treat Yourself to Refreshing Savory Snacks!</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+</header>  
+<!-- ----CARDS--- -->
+<H2 id="center">THIS WEEK'S SPECIALS</H2>
+<p style="text-align:center;color:red;line-height: 1em;"><b>MOST POPULAR</b></p>
+<div class="slid">
+<div class="card bg-dark text-white">
+    <img src="img\mango-cheese.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="card-title">MANGO CHEESE CAKE</h5>
+      <p class="card-text">NEW<br>Last updated 3 mins ago</p>
+    </div>
+  </div>
+  <div class="card bg-dark text-white">
+    <img src="img\mangocake.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="card-title">MANGO CAKE</h5>
+      <p class="card-text">NEW<br>Last updated 3 mins ago</p>
+    </div>
+  </div>
+  <div class="card bg-dark text-white">
+    <img src="img\mango-passion-cheese.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="card-title">MANGO PASSION CHEESE CAKE</h5>
+      <p class="card-text">NEW<br>Last updated 3 mins ago</p>
+    </div>
+  </div>
+  <div class="card bg-dark text-white">
+    <img src="img\mango-mousse.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="card-title">MANGO MOUSSE</h5>
+      <p class="card-text">NEW<br>Last updated 3 mins ago</p>
+    </div>
+  </div>
+
+</div>
+<!-- ----CARDS--- -->
+<h2 id="center">OUR PRODUCTS</h2>
+
+  <div class="cakes" id="cakes">
+  <div class="card" style="width: 18rem;">
+    <img src="img\b9.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">WEDDING CAKES</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">5Kg - Rs.5000</li>
+      <li class="list-group-item"><a href="product.html"> Add to cart </li></a>
+      <li class="list-group-item">
+        <div class="star">
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="img\a20.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">BIRTHDAY CAKES</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">1Kg - Rs.1200</li>
+      <li class="list-group-item"><a href="product.html"> Add to cart </li></a>
+      <li class="list-group-item">
+        <div class="star">
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="img\b2.avif" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> CHEESE CAKES</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">1Kg - Rs.1600</li>
+      <li class="list-group-item"><a href="cart.html"> Add to cart </li></a>
+      <li class="list-group-item">
+        <div class="star">
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="img\a11.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">CUSTOMIZED CAKES</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">3Kg - Rs.3800</li>
+      <li class="list-group-item"><a href="product.html"> Add to cart </li></a>
+      <li class="list-group-item">
+        <div class="star">
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<br><br>
+
+  <!-- see more -->
+  <h3 id="center"> What We Offer?</h3>
+  <br>
+  <div class="other">
+  <div class="card" style="width: 18rem;">
+    <img src="img\a231.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">BEVERAGES</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="product.html" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="img\a15.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">SAVOURY</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="product.html" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="img\c8.avif" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">PASTRIES </h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="product.html" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div> 
+
+  <div class="card" style="width: 18rem;">
+    <img src="img\b12.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">TARTS </h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="product.html" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div></div>
+  <a href="product.html" class="btn btn-primary" style="background-color: rgb(185, 10, 103); border-color:rgb(185, 10, 103);border:10rem;">Know More>></a>
+  </div>
+  <br><br>
+    <!-- ------footer------ -->
+    <footer>
+    <section class="footer" id="footer">
+        <div class="flexbox">
+            <div class="item">
+    <h2>Quick links</h2>
+    <hr>
+    <ul>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="https://maps.app.goo.gl/mGVRCYdsKruQw7fa7"> Privacy Policy</a></li>
+        <li><a href="https://maps.app.goo.gl/mGVRCYdsKruQw7fa7"> Terms and Conditions</a></li>
+        <li><a href="blog.html"> Blog</a></li>
+        <li><a href="https://maps.app.goo.gl/mGVRCYdsKruQw7fa7"> Return/Refund Policy</a></li>
+        <li><a href="https://maps.app.goo.gl/mGVRCYdsKruQw7fa7"> Shipment Policy</a></li>
+        <li><a href="https://maps.app.goo.gl/mGVRCYdsKruQw7fa7"> FAQ's</a></li>
+    </ul>
+    </div>
+    <div class="item">
+    <h2>Service Location</h2>
+    <hr>
+    <ul>
+        <li><a href="#"> Attavara</a></li>
+        <li><a href="#"> Bondel</a></li>
+        <li><a href="#"> Mukka</a></li>
+        <li><a href="#"> Puttur</a></li>
+        <li><a href="#"> Moodabidri</a></li>
+        <li><a href="#"> Maani</a></li>
+        <li><a href="#"> Kankanadi</a></li>
+        <li><a href="#"> Pandeshwara</a></li>
+        <li><a href="#"> Kottarachowki</a></li>
+        <li><a href="#"> Udupi</a></li>
+        <li><a href="#"> Kasargod</a></li>
+        <li><a href="#"> vamanjor</a></li>
+        <li><a href="#"> Valencia</a></li>
+        <li><a href="#"> Karkala</a></li>
+    </ul>
+    </div>
+    
+    <div class="item">
+    <h2>Service Timings</h2>
+    <hr>
+    <ul>
+        <li><a href="#"> Timings:</a></li>
+        <ul>
+            <li><a href="#"> Monday-Friday: <br>10.00AM to 02.00PM - 02.30PM to 08.00PM</a></li>
+            <li><a href="#"> Saturday:<br>10.00AM to 01.30PM - 02.30PM to 09.30PM</a></li>
+            <li><a href="#"> Sunday:<br>10.00AM to 02.00PM - 02.30PM to 07.00PM</a></li>
+        </ul>
+        <br>
+        <li><a href="#"> Online Order Timings: Website & App: 24*7</a></li>
+        <br>
+        <li><a href="#"> Deliver Timings: 10.00AM to 09.30PM</a></li>
+    </ul>
+    </div>
+    
+    <div class="item">
+        <h2>Payment Options</h2>
+        <hr>
+        <ul>
+            <li><a href="#"> Credit Card</a></li>
+            <li><a href="#"> Debit Card</a></li>
+            <li><a href="#"> Net Banking</a></li>
+            <li><a href="#"> UPI transaction</a></li>
+            <li><a href="#"> Cash On Delivery</a></li>
+            <br><br>
+            <div class="app">
+            <p><b>Download App</b></p>
+            <li><a href="https://play.google.com"><img src="img\play-store.png" width="200px" height="100px"></a></li><br>
+            <li><a href="https://www.apple.com/in/app-store/"><img src="img\app-store.png" width="200px" height="80px"></a></li><br>
+        </div>
+        </ul>
+    </div>
+</div>
+
+    <div class="follow"><a href="contact.html"></a> 
+          <h2>Address:</h2>
+            NForce Pauline, Shop no.1, <br>
+            opp. Roshini Nilaya school of social work, 
+            <br>Valencia, Kankanady, Mangaluru,<br> Karnataka - 575002
+            <br><br>
+            <h2>Follow Us</h2>
+            <ul>
+              <a href="https://wa.me/c/916363265295"><i class="fa-brands fa-whatsapp"></i></a>&nbsp;
+              <a href="https://www.facebook.com/albatros.mlr/"><i class="fa-brands fa-facebook"></i></a>&nbsp;
+              <a href="https://www.instagram.com/albatros_mlr/"><i class="fa-brands fa-instagram"></i></a>&nbsp;
+              <a href="https://www.instagram.com/albatros_mlr/"><i class="fa-brands fa-youtube"></i></a>&nbsp;
+              <a href="https://www.instagram.com/albatros_mlr/"><i class="fa-regular fa-envelope"></a></i>
+            </ul>
+        </div>
+    <div class="copyr">&copy Reserved. Albatros Cake Shop. Mangalore. India</div>
+
+    </section>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/5fba5055d6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

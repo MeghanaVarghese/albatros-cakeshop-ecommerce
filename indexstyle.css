@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding:0 0;
+    font-style: italic;
+}
+.car{
+   height:10%; 
+   margin-left: auto;
+   margin-right: auto;
+}
+/* ---navbar css--- */
+.navbar{
+    background-color: transparent; 
+    display:flex; 
+}
+.navbar ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.navbar li {
+display: inline-block;
+margin-inline-start: 2em;
+padding:0.5em;
+}
+.navbar a{
+    color:#000;
+    text-decoration: none;
+}
+.navbar a:hover{
+    box-sizing: content-box;
+}
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  } 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/*---center headings-----*/
+#center{
+    text-align: center;
+    padding-top:2em;
+    padding-bottom:2em;
+    color:rgb(204, 18, 111);
+}
+/*----cards slide---*/
+.slid{
+  display:flex;
+    justify-content: space-between;
+    margin: 3em 3em;
+    padding:3em 3em;  
+}
+/*----card cakes----*/
+.cakes{
+    display:flex;
+    justify-content: space-around;
+}
+ /*-----other products----*/
+ .other{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom:30px;
+ }
+ /*-----cart-section > product page ----*/
+ .cart-sect{
+  background-color:rgb(223, 185, 150);
+  margin-top: 20px;
+  padding-top: 3em;
+ }
+ .cart-sect h2{
+  text-align: center;
+  color:maroon;
+  font-size: 40px;
+ }
+ .cart-sect p{
+  padding-left: 30px;
+  font-size: 30px;
+ }
+/* ----footer css----- */
+.footer{
+    background-color:black;
+    padding: 0px 0px;
+    height:650px;
+    color:#fff;
+}
+.flexbox{
+    width:90%;
+    height:100px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+  }
+  .item{
+    width:auto;
+    height:auto;
+    padding:1em;
+    text-align:left;
+    
+    /*list-style-type: none;*/
+  }
+ .flexbox ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.flexbox a{
+color:#fff;
+text-decoration: none;
+}
+.follow{
+margin-top:170px;
+padding:3em;
+}
+.follow a{
+  color:white;
+}
+.copyr{
+    margin-top:-10px;
+    background-color: #75727257;
+    text-align:center;
+    width:100%;
+}
+/*----app download----*/
+.app li{
+    border:2px solid #fff;
+    cursor:pointer ;
+}
+.app li:hover{
+box-shadow:white ;
+}

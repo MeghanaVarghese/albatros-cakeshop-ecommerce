@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img\logo1.png">
+    <title>Cart</title>
+    <style>
+        table,th,td{
+            border:1px solid black;
+            width:50%;
+            font-weight:bolder ;
+        } 
+        .l{
+            display:flex; 
+        }
+        .m{
+            margin-left:1em;
+            padding-left: 4em;
+            border:1px solid green;
+            background-color: bisque;
+            width:50%;
+            text-align: justify;
+        }
+        .btn{
+            background-color: rgb(232, 42, 115);
+            padding:0.5em 4em;  
+        }
+        .payment-option {
+        display: none;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="l">
+    <table>
+        <tr>
+            <th>MENU</th>
+            <th>Rate</th>
+            <th>BUY</th>
+        </tr>
+        <tr>
+            <td rowspan="3">CAKE<br>
+            <li>Vanilla</li>
+            <li>Chocolate</li>
+        <li>Strawberry</li>
+    <li>Red Velvet</li>
+<li>Black Forest</li>
+<!-- Lemon,
+Coconut,
+Carrot,
+Coffee,
+Pineapple,
+Banana,
+Marble,
+Blueberry,
+Raspberry,
+Orange,
+Almond,
+Hazelnut,
+Pistachio,
+Caramel,
+Mint,
+Oreo,
+Peanut Butter,
+Cherry,
+Mango,
+Tiramisu -->
+</td>
+            <td>1 Kg
+                <p>Price: Rs. 1000</p>
+            </td>
+            <td><button class="btn" onclick="addToCart('product1', '1 Kg Cake', 1000)">Add to cart</button></td>
+        </tr>
+        <tr>
+            <td>1/2 Kg
+                <p>Price: Rs. 550</p>
+            </td>
+            <td><button class="btn" onclick="addToCart('product1', '1/2 Kg Cake', 550)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>pastry
+                <p>Price: Rs. 65</p>
+            </td>
+            <td><button class="btn" onclick="addToCart('product1', '1 Pastry Cake', 65)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td rowspan="3">CHEESE CAKES:<br>
+                <li>Classic Cheesecake</li>
+            <li>Strawberry Cheesecake</li>
+            <li>Mango Cheesecake</li>
+            <li>Caramel Cheesecake</li>
+            <!-- Blueberry Cheesecake,
+                Raspberry Cheesecake,
+                Chocolate Cheesecake,
+                White Chocolate Cheesecake,
+                Oreo Cheesecake,
+                Lemon Cheesecake,
+                Key Lime Cheesecake,
+                Pumpkin Cheesecake,
+                Tiramisu Cheesecake,
+                Cherry Cheesecake,
+                Espresso Cheesecake,
+                Coconut Cheesecake,
+                Peanut Butter Cheesecake,
+                Salted Caramel Cheesecake,
+                Nutella Cheesecake,
+                Passionfruit Cheesecake,
+                Pineapple Cheesecake,
+                Banana Cheesecake,
+                Mocha Cheesecake,
+                Red Velvet Cheesecake -->
+            </td>
+            <td>Large - 1 kg
+                <p>Price: Rs. 1300</p>
+            </td>
+            <td><button class="btn" onclick="addToCart('product2', '1 Kg Cheese-Cake', 1300)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>small - 500g
+                <p>Price: Rs. 650</p>
+            </td>
+            <td><button class="btn" onclick="addToCart('product2', '500g Cheese-Cake', 650)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>pastry
+                <p>Price: Rs. 75</p>
+            </td>
+            <td><button class="btn" onclick="addToCart('product2', '1 slice Cheese-Cake', 75)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>DONUTS<br>
+                <li>Glazed Donut</li>
+            <li>Chocolate Frosted Donut</li>
+            <li>Powdered Sugar Donut</li>
+        <li> Cinnamon Sugar Donut</li>
+        <!-- Strawberry Frosted Donut
+        Boston Cream Donut
+        Jelly Donut
+        Vanilla Frosted Donut
+                Maple Frosted Donut
+                Old Fashioned Donut
+                Coconut Frosted Donut
+                Blueberry Donut
+                Lemon Frosted Donut
+                Raspberry Filled Donut
+                Apple Fritter
+                Cruller
+                French Cruller
+                Chocolate Cake Donut
+                Buttermilk Donut
+                Glazed Twist Donut
+                Bear Claw
+                Long John
+                Cream Filled Donut
+                Custard Filled Donut
+                Marshmallow Filled Donut -->
+                </td>
+            <td>Price: Rs. 65 </td>
+            <td><button class="btn" onclick="addToCart('product3', '1 Donut', 65)">Add to Cart</button></td>
+        </tr>
+        
+        <tr>
+            <td>PIE<br>Apple Pie
+            <li>Pumpkin Pie</li>
+            <li>Mixed Berry Pie</li>
+            <li>Custard Pie</li>
+            <li>Blueberry Pie</li>
+                <!-- Key Lime Pie
+                Lemon Meringue Pie
+                Peach Pie
+                Strawberry Pie
+                Coconut Cream Pie
+                Banana Cream Pie
+                Chocolate Cream Pie
+                Rhubarb Pie
+                Blackberry Pie
+            Pecan Pie
+                Cherry Pie
+            Cranberry Pie
+                Sweet Potato Pie
+                Shoofly Pie
+                Mississippi Mud Pie -->
+            </td>
+            <td>Price: Rs. 150</td>
+            <td><button class="btn" onclick="addToCart('product4', '1 Pie', 150)">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>TART<br>Fruit Tart
+                <li>Lemon Tart</li>
+                <li>Chocolate Tart</li>
+            <li> Raspberry Tart</li>
+        <li>Strawberry Tart</li>
+                <!-- Blueberry Tart
+                Key Lime Tart
+                Almond Tart
+                Coconut Tart
+                Mixed Berry Tart
+                Caramel Tart
+                Pecan Tart
+                Pistachio Tart
+                Cherry Tart
+                Mango Tart
+                Passionfruit Tart
+                Pear Tart
+                Rhubarb Tart
+                Fig Tart
+                Apricot Tart -->
+            </td>
+            <td>Price: Rs. 220</td>
+            <td><button class="btn" onclick="addToCart('product5', '1 Tart', 220)">Add to Cart</button></td>
+        </tr>
+    </table>
+    
+    <div class="m">
+        <div class="cart-sect">
+            <div id="cart">
+              <h2>Shopping Cart</h2><hr>
+              <ul id="cart-items"></ul><hr>
+              <p>Total: Rs.<span id="cart-total">0</span></p>
+          </div>
+        </div>
+        <a href="#payment"><button class="btn">PROCEED BILLING</button></a> 
+    </div>
+</div>
+<section id="payment">
+    <h1>Payment</h1>
+    <h2>Choose Payment Method</h2>
+    <select id="paymentMethod" onchange="showPaymentDetails(this.value)">
+        <option value="">Select Payment Method</option>
+        <option value="creditDebit">Credit/Debit Card</option>
+        <option value="netBanking">Net Banking</option>
+    </select>
+
+    <div id="creditDebit" class="payment-option">
+        <h2>Credit/Debit Card Details</h2>
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber">
+        <label for="expiry">Expiry Date:</label>
+        <input type="text" id="expiry">
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv">
+    </div>
+
+    <div id="netBanking" class="payment-option">
+        <h2>Net Banking Details</h2>
+        <label for="bankName">Bank Name:</label>
+        <input type="text" id="bankName">
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId">
+        <label for="password">Password:</label>
+        <input type="password" id="password">
+    </div>
+
+    <button class="btn" onclick="proceedPayment()">Proceed</button>
+</section>
+
+  <!-- -----cart fn. js---- -->
+  <script src="cart.js" ></script>
+    
+</body>
+</html>
